@@ -51,7 +51,6 @@ const IndexPage = ({data}) => (
           <Link to={post.link} style={linkStyle}>{post.title}</Link>
           <p style={textStyle}>{post.content}</p>
       </div>
-      
     ))}
 
   </Layout>
