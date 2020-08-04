@@ -16,9 +16,9 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        baseUrl: "localhost/hugo/logiciel/blog",
-        protocol: "http",
-        hostingWPCOM: false,
+        baseUrl: "gj.tenthkart.com",
+        protocol: "https",
+        hostingWPCOM: true,
         useACF: true,
         verboseOutput: true
       },
@@ -42,7 +42,7 @@ module.exports = {
       options: {
         typeName: `WPGraphQL`,
         fieldName: `wpgraphql`,
-        url: `http://localhost/hugo/logiciel/blog/graphql`,
+        url: `https://gj.tenthkart.com/graphql`,
         refetchInterval: 60,
       },
     },
