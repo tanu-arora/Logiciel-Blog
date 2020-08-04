@@ -49,7 +49,7 @@ const IndexPage = ({data}) => (
     {data.wpgraphql.posts.nodes.map(post => (
       <div key={post.id} style={divStyle}>
           <Link to={post.link} style={linkStyle}>{post.title}</Link>
-          <p style={textStyle}>{post.content}</p>
+          <div style={textStyle} dangerouslySetInnerHTML={{ __html: post.content }}></div>
       </div>
     ))}
 
