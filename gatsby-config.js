@@ -18,7 +18,7 @@ module.exports = {
       options: {
         baseUrl: "gj.tenthkart.com",
         protocol: "https",
-        hostingWPCOM: true,
+        hostingWPCOM: false,
         useACF: true,
         verboseOutput: true
       },
